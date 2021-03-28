@@ -59,6 +59,4 @@ client.connect((err) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(`db connected at http://localhost:${port}`);
-});
+app.listen(process.env.PORT || port);
